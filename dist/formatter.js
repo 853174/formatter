@@ -88,7 +88,9 @@ const toFormattedDate = (date, options) => {
             return momentDate.locale(formatOptions.locale).format(formatOptions.format);
         }
     }
-    catch (e) { }
+    catch (e) {
+        return formatOptions.fallback;
+    }
     return formatOptions.fallback;
 };
 exports.toFormattedDate = toFormattedDate;

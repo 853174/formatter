@@ -39,6 +39,6 @@ export declare const TOOL_FORMAT: {
 };
 export declare const VAT_FORMAT_ES: StringFormatOptions;
 export declare const ALL_FORMATS: StringFormatOptions[];
-export declare const toFormattedString: (str?: string, ...options: StringFormatOptions[]) => any;
+export declare const toFormattedString: (str?: string, ...options: StringFormatOptions[]) => (string | undefined);
 export declare const capitalize: (str?: string) => string;
 export declare const capitalizeAll: (str?: string) => string;
